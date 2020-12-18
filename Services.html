@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+    <!-- <script src="/Scripts/vue.js"></script> -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    
+    <title></title>
+
+    <link rel="stylesheet" href="Common.css" type="text/css" />
+</head>
+<body>
+    <div id="app">
+        <div>
+            <img id="img_logo" src="image/ysolar_logo.png">
+            <a href="HomePage.html"><strong>關於力暘</strong></a>
+            <a href=""><strong>服務項目</strong></a>
+            <a href=""><strong>最新消息</strong></a>
+            <a href=""><strong>案例實績</strong></a>
+            <a href=""><strong>常見問題</strong></a>
+            <a href=""><strong>聯絡我們</strong></a>
+        </div>
+        <div class="commom_page">
+            <img class="img_background" src="image/service_banner.png">
+        </div>
+        <div class="team_page">
+            <img class="img_background" src="image/team.png">
+        </div>
+        <div class="commom_page">
+            <img class="img_background" src="image/onestation.png">
+        </div>
+        <div class="contact_page">
+            <div class="contact_info">
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                      <input class="form-control input-sm" type="text" placeholder="姓名">
+                    </div>
+                    <div class="col-xs-6">
+                      <input class="form-control input-sm" type="text" placeholder="連絡電話">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-12">
+                      <input class="form-control input-sm" type="text" placeholder="信箱">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-12">
+                        <textarea class="form-control" rows="3" id="comment" placeholder="留言"></textarea>
+                    </div>
+                </div>
+                <button class="button" id="btn_submit"><span>確認送出 </span></button>
+            </div>
+            <img class="img_background" src="image/contact.png">
+        </div>
+        <div class="commom_page">
+            <div class="nav">
+                <img class="img_feature" :src="imgArr[index]" alt="">
+                <div class="btn_feature_area"> 
+                    <button class="btn_feature" id="btn_feature1" type="button" @click="left">上一頁<i style="margin: auto;" class="far fa-arrow-alt-circle-left fa-1x"></i></button>
+                    <button class="btn_feature" id="btn_feature2" type="button" @click="right">下一頁<i style="margin: auto;" class="far fa-arrow-alt-circle-right fa-1x"></i></button>
+                </div>
+                
+            </div>
+            <img class="img_background" src="image/feature.png">
+        </div>
+        <div class="commom_page">
+            <img class="img_background" src="image/promise.png">
+        </div>
+        <div class="info_page">
+            <div class="email_submit">
+                <input id="txb_email" type="email" placeholder="Email"><br>
+                <button id="btn_gradual" type="button"><strong>確認送出</strong></button>
+            </div>
+            <img class="img_background" src="image/info.png">
+        </div>
+
+
+        
+        
+       
+     
+
+
+
+    </div>
+
+    <script src="Services.js"></script>
+</body>
+</html>

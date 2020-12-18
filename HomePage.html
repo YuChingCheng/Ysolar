@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+    <!-- <script src="/Scripts/vue.js"></script> -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    
+    <title></title>
+
+    <link rel="stylesheet" href="Common.css" type="text/css" />
+
+    <style>
+        /* Extra small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) 
+        { 
+            
+        }
+
+        /* Small devices (landscape phones, less than 768px) */
+        @media (min-width: 300.00px) 
+        { 
+            #img_logo{
+                width:120px;
+                height: 50px;
+                margin: 10px 0px 0px 20px;
+            }
+            #logo{
+                width: 45%;
+            }
+
+            #nav_row{
+                font-size: 15px;
+                margin-top: 10px;
+                position: absolute;
+                z-index: 2;
+            }
+          
+            #top_page_text1{
+                font-size: 25px;
+            }
+            #top_page_text2{
+                font-size: 20px;
+            }
+            .img_backgroud{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .slider{
+                width: 100%;
+                height: 100%;
+            }
+            .forward{
+                position: absolute;
+                z-index: 2;
+            }
+            .col-md-2{
+                text-align: right;
+                /* max-width: 100%; */
+            }
+            .left_nav{
+                width: 10%;
+            }
+
+            .font_title{
+                font-size: 20px;
+            }
+            .font_context{
+                font-size: 15px;
+            }
+            .left{
+                width: 100%;
+            }
+            .right{
+                width: 100%;
+            }
+        }
+
+        /* Medium devices (tablets, less than 992px) */
+        @media (min-width: 767.00px) 
+        {
+            #img_logo{
+                width:150px;
+                height: 70px;
+                margin: 10px 0px 0px 20px;
+            }
+            #logo{
+                width: 45%;
+            }
+
+            #nav_row{
+                font-size: 15px;
+                margin-top: 20px;
+                position: absolute;
+                z-index: 2;
+            }
+            
+            #top_page_text1{
+                font-size: 35px;
+            }
+            #top_page_text2{
+                font-size: 25px;
+            }
+            .slider{
+                width: 100%;
+                height: 100%;
+            }
+            .forward{
+                position: absolute;
+                z-index: 2;
+            }
+            .col-md-2 {
+                max-width: 30%;
+            }
+        }
+
+        /* Large devices (desktops, less than 1200px) */
+        @media (min-width: 1024.00px) 
+        {
+            .page{
+                width: 100%;
+                height: 675px;
+                object-fit:cover;
+                position: relative;
+            }
+            #nav_row {
+                position: absolute;
+                margin-top: 20px;
+                z-index: 2;
+                display: inline;
+                float: right;
+                width: 60%;
+            }
+            #logo{
+                position: inherit;
+                z-index: 2;
+                display: inline;
+                float: left;
+                width: 40%;
+            }
+            #img_logo{
+                width:150px;
+                height: 50px;
+                margin: 10px 200px 10px 100px;
+            }
+            #nav_row{
+                margin-top: 20px;
+            }
+
+            .context{
+                text-align: center;
+                position:absolute;
+                z-index: 2;
+                top: 40%;
+                width:100%;
+                margin:0 auto;
+            }
+
+            .slider_context{
+                position:absolute; 
+                left:0; 
+                top:0; 
+                font-weight:bold;
+            }
+            .nav{
+                position:absolute;
+                z-index: 2;
+            }
+            .button {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: #E38049;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                width: 150px;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+            .button:hover span {
+                padding-right: 25px;
+            }
+
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+            .left{
+                float: left;
+                width: 50%;
+            }
+            .right{
+                float: right;
+                width: 50%;
+            }
+            .img_text{
+                width: 80%;
+            }
+            .about_page{
+                margin: 50px;
+            }
+            .showdata{
+                text-align: center;
+                color: white;
+                padding: 50px 100px;
+                width:100%;
+                height:207px;
+                background: -webkit-linear-gradient(#E38049,#FFB01A);
+                background: -o-linear-gradient(#E38049,#FFB01A);
+                /* background: -moz-linear-gradient#E38049,#FFB01A); */
+                background: linear-gradient(#E38049,#FFB01A);
+            }
+
+            #slider{
+                position:absolute;
+                z-index: 2;
+                margin-top: 125px;
+            }
+            .slider{
+                object-fit:cover;
+                position: relative;
+                float: right;
+                display: flex;
+            }
+            #img_slider{
+                height: 330px;
+                margin: 10px;
+            }
+            .sun_page{
+                width: 100%;
+                height: 323px;
+                z-index: 2;
+                object-fit:cover;
+                position: relative;
+            }
+            .cases_page{
+                width: 100%;
+                height: 860px;
+                object-fit:cover;
+                position: relative;
+            }
+            .contact_page{
+                width: 100%;
+                height: 485px;
+                object-fit:cover;
+                position: relative;
+            }
+            .info_page{
+                width: 100%;
+                object-fit:cover;
+                position: relative;
+            }
+            .contact_info{
+                position: absolute;
+                z-index: 2;
+                margin: 200px 0px 0px 667px;
+            }
+            #btn_submit{
+                background-color: white;
+                color: #E38049; 
+                border: 2px solid #E38049;
+                margin: 0px;
+                float:right;
+            }
+            .email_submit{
+                position: absolute;
+                z-index: 2;
+                margin: 130px 0px 0px 860px;
+            }
+            #txb_email{
+                width: 250px;
+                margin-bottom: 10px;
+            }
+            #btn_gradual{
+                width:250px;
+                color: white;
+                border: none;
+                padding: 5px 0px;
+                background: -webkit-linear-gradient(left,#E38049,#FFB01A);
+                background: -o-linear-gradient(right,#E38049,#FFB01A);
+                background: -moz-linear-gradient(right,#E38049,#FFB01A);
+                background: linear-gradient(to right,#E38049,#FFB01A);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="page">
+            <div id="logo">
+                <img id="img_logo" src="image/ysolar_logo.png">
+            </div>
+            <div class="row" id="nav_row">
+                <div class="col-md-2"><a href=""><strong>關於力暘</strong></a></div>
+                <div class="col-md-2"><a href="Services.html"><strong>服務項目</strong></a></div>
+                <div class="col-md-2"><a href=""><strong>最新消息</strong></a></div>
+                <div class="col-md-2"><a href=""><strong>案例實績</strong></a></div>
+                <div class="col-md-2"><a href=""><strong>常見問題</strong></a></div>
+                <div class="col-md-2"><a href=""><strong>聯絡我們</strong></a></div>
+            </div>
+            <div class="context">
+                <span class="font_biggest" id="top_page_text1"><strong>「代代相傳，由您開始」</strong></span><br>
+                <span class="font_second" id="top_page_text2"><strong>力暘能源與您一起支持綠能，創造未來無限可能</strong></span><br><br>
+                <button class="button"><span>了解更多 </span></button>
+            </div>
+            
+            <div class="slider_container">
+                <div class="slider">
+                    <img class="img_background" src="image/HomePageBackgroundA.png" alt="pure css3 slider" />
+                </div>
+                <div class="slider">
+                    <img class="img_background" src="image/HomePageBackgroundB.png" alt="pure css3 slider" />
+                </div>
+                <div class="slider">
+                    <img class="img_background" src="image/HomePageBackgroundC.png" alt="pure css3 slider" />
+                </div>
+            </div> 
+        </div>
+
+        <div class="about_page">
+            <span class="font_title"><strong>關於力暘</strong></span><br><br>
+            <div class="left">
+                <span class="font_context">「力暘能源」投身太陽能產業，目的希望能貢獻一己之力，透過太陽光電技術，
+                    珍惜上天賜予的每一縷陽光，從中汲取能源，提供友善環境的綠電，為台灣敞開明亮又乾淨的用電未來。改善生活的空氣品質，
+                    細心照料我們的寶島，是力暘能源的理念與堅持！
+                </span>
+                <br>
+                <span class="font_context">
+                    透過「代代相傳，由您開始」的口號，呼籲大眾共同響應太陽能光電，讓「綠能環保」及「永續能源」有真正實踐的機會。
+                </span>
+            </div>
+            <div class="right">
+                <video width="100%" controls>
+                    <source src="video/video_test.mp4" type="video/mp4">
+                    您的瀏覽器不支援HTML影片
+                  </video>
+            </div>
+            <div>
+                <button class="button"><span>了解更多 </span></button>
+            </div>
+        </div>
+
+        <!-- <div class="showdata">
+            <div class="row">
+                <div class="col">
+                    <span class="font_size50">2016</span>&emsp;<span>年</span><br>
+                    <span class="font_size30">力暘成立</span>
+                </div>
+                <div class="col">
+                    <span class="font_size50">1000</span>&emsp;<span>多位</span><br>
+                    <span class="font_size30">地主見證</span>
+                </div>
+                <div class="col">
+                    <span class="font_size50">600</span>&emsp;<span>甲</span><br>
+                    <span class="font_size30">累計積收地</span>
+                </div>
+                <div class="col">
+                    <span class="font_size50">230</span>&emsp;<span>公頃</span><br>
+                    <span class="font_size30">榮獲台糖租地</span>
+                </div>
+              </div>
+        </div> -->
+        
+
+        
+        <!-- <div class="page">
+            
+            <div class="right">
+                <div id="slider" class="slider">
+                    <img id="img_slider" v-for="(src,index) in imgSrc" :key="index" :src="src" 
+                    @touchstart="touchstart"
+                    @touchmove="touchmove"/>
+                    <i style="margin: auto;" class="far fa-arrow-alt-circle-right fa-2x" onclick="nextPicture()"></i>
+                </div>
+            </div>
+            
+            <img class="img_background" src="image/service.png">
+        </div> -->
+
+        <!-- <div class="sun_page">
+            <img class="img_background" src="image/sun_energy.png">
+        </div> -->
+        <!-- <div class="cases_page">
+            <img class="img_background" src="image/cases.png">
+        </div> -->
+        <!-- <div class="contact_page">
+            <div class="contact_info">
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                      <input class="form-control input-sm" type="text" placeholder="姓名">
+                    </div>
+                    <div class="col-xs-6">
+                      <input class="form-control input-sm" type="text" placeholder="連絡電話">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-12">
+                      <input class="form-control input-sm" type="text" placeholder="信箱">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-12">
+                        <textarea class="form-control" rows="3" id="comment" placeholder="留言"></textarea>
+                    </div>
+                </div>
+                <button class="button" id="btn_submit"><span>確認送出 </span></button>
+            </div>
+            <img class="img_background" src="image/contact.png">
+        </div> -->
+        <!-- <div class="info_page">
+            <div class="email_submit">
+                <input id="txb_email" type="email" placeholder="Email"><br>
+                <button id="btn_gradual" type="submit"><strong>確認送出</strong></button>
+            </div>
+            <img class="img_background" src="image/info.png">
+        </div> -->
+
+    </div>
+
+    <script src="HomePage.js"></script>
+
+   
+</body>
+</html>
