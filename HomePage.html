@@ -18,7 +18,8 @@
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <title></title>
 
     <link rel="stylesheet" href="Common.css" type="text/css" />
@@ -33,7 +34,7 @@
         /* Small devices (landscape phones, less than 768px) */
         @media (min-width: 300.00px) 
         { 
-            #img_logo{
+            /* #img_logo{
                 width:120px;
                 height: 50px;
                 margin: 10px 0px 0px 20px;
@@ -60,7 +61,7 @@
                 width: 100%;
                 height: 100%;
             }
-            .slider{
+            .top_slider{
                 width: 100%;
                 height: 100%;
             }
@@ -70,7 +71,6 @@
             }
             .col-md-2{
                 text-align: right;
-                /* max-width: 100%; */
             }
             .left_nav{
                 width: 10%;
@@ -87,13 +87,13 @@
             }
             .right{
                 width: 100%;
-            }
+            } */
         }
 
         /* Medium devices (tablets, less than 992px) */
         @media (min-width: 767.00px) 
         {
-            #img_logo{
+            /* #img_logo{
                 width:150px;
                 height: 70px;
                 margin: 10px 0px 0px 20px;
@@ -122,16 +122,16 @@
             .forward{
                 position: absolute;
                 z-index: 2;
-            }
-            .col-md-2 {
+            } */
+            /* .col-md-2 {
                 max-width: 30%;
-            }
+            } */
         }
 
         /* Large devices (desktops, less than 1200px) */
         @media (min-width: 1024.00px) 
         {
-            .page{
+            /* .page{
                 width: 100%;
                 height: 675px;
                 object-fit:cover;
@@ -176,7 +176,7 @@
                 top:0; 
                 font-weight:bold;
             }
-            .nav{
+            .forward{
                 position:absolute;
                 z-index: 2;
             }
@@ -219,7 +219,7 @@
             }
             .left{
                 float: left;
-                width: 50%;
+                width: 45%;
             }
             .right{
                 float: right;
@@ -230,6 +230,7 @@
             }
             .about_page{
                 margin: 50px;
+                height: 430px;
             }
             .showdata{
                 text-align: center;
@@ -239,7 +240,6 @@
                 height:207px;
                 background: -webkit-linear-gradient(#E38049,#FFB01A);
                 background: -o-linear-gradient(#E38049,#FFB01A);
-                /* background: -moz-linear-gradient#E38049,#FFB01A); */
                 background: linear-gradient(#E38049,#FFB01A);
             }
 
@@ -254,7 +254,7 @@
                 float: right;
                 display: flex;
             }
-            #img_slider{
+            .img_slider{
                 height: 330px;
                 margin: 10px;
             }
@@ -312,7 +312,7 @@
                 background: -o-linear-gradient(right,#E38049,#FFB01A);
                 background: -moz-linear-gradient(right,#E38049,#FFB01A);
                 background: linear-gradient(to right,#E38049,#FFB01A);
-            }
+            } */
 
         }
     </style>
@@ -338,13 +338,13 @@
             </div>
             
             <div class="slider_container">
-                <div class="slider">
+                <div class="top_slider">
                     <img class="img_background" src="image/HomePageBackgroundA.png" alt="pure css3 slider" />
                 </div>
-                <div class="slider">
+                <div class="top_slider">
                     <img class="img_background" src="image/HomePageBackgroundB.png" alt="pure css3 slider" />
                 </div>
-                <div class="slider">
+                <div class="top_slider">
                     <img class="img_background" src="image/HomePageBackgroundC.png" alt="pure css3 slider" />
                 </div>
             </div> 
@@ -357,10 +357,11 @@
                     珍惜上天賜予的每一縷陽光，從中汲取能源，提供友善環境的綠電，為台灣敞開明亮又乾淨的用電未來。改善生活的空氣品質，
                     細心照料我們的寶島，是力暘能源的理念與堅持！
                 </span>
-                <br>
+                <br><br>
                 <span class="font_context">
                     透過「代代相傳，由您開始」的口號，呼籲大眾共同響應太陽能光電，讓「綠能環保」及「永續能源」有真正實踐的機會。
                 </span>
+                <br><br>
             </div>
             <div class="right">
                 <video width="100%" controls>
@@ -373,80 +374,178 @@
             </div>
         </div>
 
-        <!-- <div class="showdata">
+        <div class="showdata">
             <div class="row">
                 <div class="col">
-                    <span class="font_size50">2016</span>&emsp;<span>年</span><br>
-                    <span class="font_size30">力暘成立</span>
+                    <span class="font_biggest">2016</span>&emsp;<span>年</span><br>
+                    <span class="font_context">力暘成立</span>
                 </div>
                 <div class="col">
-                    <span class="font_size50">1000</span>&emsp;<span>多位</span><br>
-                    <span class="font_size30">地主見證</span>
+                    <span class="font_biggest">1000</span>&emsp;<span>多位</span><br>
+                    <span class="font_context">地主見證</span>
                 </div>
                 <div class="col">
-                    <span class="font_size50">600</span>&emsp;<span>甲</span><br>
-                    <span class="font_size30">累計積收地</span>
+                    <span class="font_biggest">600</span>&emsp;<span>甲</span><br>
+                    <span class="font_context">累計積收地</span>
                 </div>
                 <div class="col">
-                    <span class="font_size50">230</span>&emsp;<span>公頃</span><br>
-                    <span class="font_size30">榮獲台糖租地</span>
+                    <span class="font_biggest">230</span>&emsp;<span>公頃</span><br>
+                    <span class="font_context">榮獲台糖租地</span>
                 </div>
               </div>
-        </div> -->
+        </div>
         
 
         
-        <!-- <div class="page">
-            
-            <div class="right">
-                <div id="slider" class="slider">
-                    <img id="img_slider" v-for="(src,index) in imgSrc" :key="index" :src="src" 
-                    @touchstart="touchstart"
-                    @touchmove="touchmove"/>
-                    <i style="margin: auto;" class="far fa-arrow-alt-circle-right fa-2x" onclick="nextPicture()"></i>
+        <div class="service_page">
+            <div class="service_context">
+                <div class="service_left">
+                    <span class="font_title"><strong>服務項目</strong></span><br><br>
+                    <span class="font_context">「力暘能源股份有限公司」成立於2016年，為國內提供太陽能一站式整合服務，
+                        從取得土地開發興建與監造太陽能光電場，到最後的巡檢維運，結合土地、工程、電力、資訊的專業和技術服務，
+                        擁有最廣域的規畫及營運團隊，創造出太陽能光電高效的售電收益。
+                    </span>
+                </div>
+                <div class="service_right">
+                    <div class="slider">
+                        <img class="img_slider" :src="imgSrc[index]" alt="">
+                        <img class="img_slider" :src="imgSrc[index+1]" alt="">
+                        <button class="btn_arrow" type="button" @click="right">
+                            <i id="btn_next" style="margin: auto;" class="far fa-arrow-alt-circle-right fa-2x"></i>
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
+           
             
             <img class="img_background" src="image/service.png">
-        </div> -->
+        </div>
 
-        <!-- <div class="sun_page">
-            <img class="img_background" src="image/sun_energy.png">
-        </div> -->
-        <!-- <div class="cases_page">
+        <div class="sun_page">
+            <div class="solar_context">
+                <div class="solar_title"><span class="font_title"><strong>太陽能優勢</strong></span></div>
+                <div class="solar_images">
+                    <img class="img_solar" src="image/solar1.png">
+                    <img class="img_solar" src="image/solar2.png">
+                    <img class="img_solar" src="image/solar3.png">
+                </div>
+            </div>
+            <img class="img_background" src="image/solar.png">
+        </div>
+
+
+        <div class="cases_page">
+            <div class="cases_context">
+                <span class="font_title"><strong>案例實績</strong></span><br><br><br>
+                <span class="font_context">力暘能源提供地主專業諮詢，再造土地活化。秉持科技匠心與業界良心，累積超過600甲地主的見證，
+                    自有好口碑並屢創佳績。每一案20年的租期，是地主的信賴託付，更是力暘最溫暖的守護。
+                </span>
+            </div>
             <img class="img_background" src="image/cases.png">
-        </div> -->
-        <!-- <div class="contact_page">
-            <div class="contact_info">
-                <div class="form-group row">
-                    <div class="col-xs-6">
-                      <input class="form-control input-sm" type="text" placeholder="姓名">
-                    </div>
-                    <div class="col-xs-6">
-                      <input class="form-control input-sm" type="text" placeholder="連絡電話">
-                    </div>
+        </div>
+
+
+        <div class="contact_page">
+            <div class="contact_context">
+                <div class="contact_left">
+                    <span class="font_context"><strong>預約您的</strong></span><br>
+                    <span class="font_context"><strong>專屬顧問團隊</strong></span><br><br><br>
+                    <span class="font_small_context">集合相關專業領域與經驗豐富之技術人員，並將與水土保持、環境工程、大地工程、生態調查等
+                        團隊合作，另聘國內外交通運輸、經營管理、財稅法令等專家學者為特約顧問，以策略聯盟方式結合多元領域人員。
+                    </span><br><br><br>
+                    <span class="font_small_context" style="color: #F97C22;">| 力暘能源與您一起支持綠能，創造未來無限可能
+                    </span>
                 </div>
-                <div class="form-group row">
-                    <div class="col-xs-12">
-                      <input class="form-control input-sm" type="text" placeholder="信箱">
+                <div class="contact_right">
+                    <span class="font_context"><strong>與我們聯絡!</strong></span><br>
+                    <span class="font_small_context">關於產品及施工相關問題，無論您有任何需求，歡迎填下您的聯絡資料，我們將盡速請專人回覆您，謝謝
+                    </span>
+                    <div class="form-group row">
+                        <div class="col-xs-6">
+                            <input class="form-control input-sm" type="text" placeholder="姓名">
+                        </div>
+                        <div class="col-xs-6">
+                            <input class="form-control input-sm" type="text" placeholder="連絡電話">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-xs-12">
-                        <textarea class="form-control" rows="3" id="comment" placeholder="留言"></textarea>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <input class="form-control input-sm" type="text" placeholder="信箱">
+                        </div>
                     </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <textarea class="form-control" rows="3" id="comment" placeholder="留言"></textarea>
+                        </div>
+                    </div>
+                    <button class="button" id="btn_submit"><span>確認送出 </span></button>
                 </div>
-                <button class="button" id="btn_submit"><span>確認送出 </span></button>
             </div>
             <img class="img_background" src="image/contact.png">
-        </div> -->
-        <!-- <div class="info_page">
-            <div class="email_submit">
-                <input id="txb_email" type="email" placeholder="Email"><br>
-                <button id="btn_gradual" type="submit"><strong>確認送出</strong></button>
+        </div>
+
+
+        <div class="info_page">
+            <div class="row info_context">
+                <div class="col-md-2">
+                    <img class="img_footer_logo" src="image/ysolar_logo2.png">
+                    <div class="row">
+                        <div class="col"> <i class="fab fa-facebook-square icon_footer" style="font-size:24px"></i></div>
+                        <div class="col"> <i class='fab fa-facebook-messenger icon_footer' style='font-size:24px'></i></div>
+                        <div class="col"> <i class="fab fa-youtube icon_footer" style="font-size:24px"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-5">
+                            <span class="font_context">公司資訊</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <i class='fas fa-phone' style="color: #F97C22 ;"></i>
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">免費服務專線 0809-099-008</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <i class='fas fa-map-marker-alt' style="color: #F97C22 ;"></i>
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">台中總公司&nbsp; |&nbsp; 台中市西屯區市政北二路236號9F之6</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">台南分處&nbsp;&emsp; |&nbsp; 台南市安南區安吉路一段51號</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">屏東分處&nbsp;&emsp; |&nbsp; 屏東縣東港鎮沿海路163號</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-5">
+                    <span class="font_context">訂閱力暘</span><br>
+                    <span class="font_small_context">歡迎留下您的信箱，就能接收有關力暘能源的最新消息。</span>
+                    <input id="txb_email" type="email" placeholder="Email"><br>
+                    <button id="btn_gradual" type="submit"><strong>確認送出</strong></button>
+                    
+                </div>
             </div>
-            <img class="img_background" src="image/info.png">
-        </div> -->
+            
+        </div>
 
     </div>
 

@@ -7,32 +7,25 @@ var app = new Vue({
             'image/service2.png',
             'image/service3.png',
         ],
-        startPointX: 0,
-        changePointX: 0,
-        showIndex: 0,
-        slides: 5,
-        active: 1
+        index:0,
     },
     mounted: function() {
         
     },
     
     methods: {
-        move(amount) {
-            let newActive
-            const newIndex = this.active + amount
-            if (newIndex > this.slides) newActive = 1
-            if (newIndex === 0) newActive = this.slides
-            this.active = newActive || newIndex
+        left:function(){
+            if(this.index==1){
+                this.index--;
+                
+                
+            }
         },
-        jump(index) {
-        this.active = index
-        },
-        addSlide() {
-        this.slides = this.slides + 1
-        },
-        removeSlide() {
-        this.slides = this.slides - 1 
+        right:function(){
+            if(this.index<1){
+                this.index++;
+                document.getElementById("btn_next").className="far fa-arrow-alt-circle-left fa-2x";
+            }
         }
 
     },

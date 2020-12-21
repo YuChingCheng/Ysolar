@@ -1,16 +1,21 @@
 html, body { margin: 0; padding: 0; height: 100%; border:none; }
 .font_biggest{
-    font-size: 30px;
+    font-size: 50px;
 }
 .font_second{
-    font-size: 20px;
+    font-size: 38px;
 }
 .font_title{
     font-size: 30px;
 }
 .font_context{
     font-size: 21px;
-    margin-bottom: 50px;
+}
+.font_small_context{
+    font-size: 16px;
+}
+.font_number{
+    font-size: 70px;
 }
 
 .slider_container {
@@ -104,7 +109,7 @@ a{
 }
 a:hover {
     text-decoration:none;
-    color:#E38049;
+    color:#F97C22;
 }
 
 
@@ -158,14 +163,14 @@ a:hover {
     top:0; 
     font-weight:bold;
 }
-.nav{
+.forward{
     position:absolute;
     z-index: 2;
 }
 .button {
     display: inline-block;
     border-radius: 4px;
-    background-color: #E38049;
+    background-color: #F97C22;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -199,9 +204,31 @@ a:hover {
     opacity: 1;
     right: 0;
 }
+.service_page{
+    width: 100%;
+    height: 720px;
+    object-fit:cover;
+    position: relative;
+}
+.service_context{
+    position: absolute;
+    margin: 190px 50px 0px 150px ;
+}
+.service_left{
+    float: left;
+    width: 30%;
+}
+.service_right{
+    float: right;
+    width: 60%;
+}
+.btn_arrow{
+    background-color: transparent;
+    border: none;
+}
 .left{
     float: left;
-    width: 50%;
+    width: 45%;
 }
 .right{
     float: right;
@@ -219,81 +246,110 @@ a:hover {
     padding: 50px 100px;
     width:100%;
     height:207px;
-    background: -webkit-linear-gradient(#E38049,#FFB01A);
-    background: -o-linear-gradient(#E38049,#FFB01A);
-    /* background: -moz-linear-gradient#E38049,#FFB01A); */
-    background: linear-gradient(#E38049,#FFB01A);
+    background: -webkit-linear-gradient(#F97C22,#FFB01A);
+    background: -o-linear-gradient(#F97C22,#FFB01A);
+    background: linear-gradient(#F97C22,#FFB01A);
 }
 
-#slider{
+.slider{
     position:absolute;
     z-index: 2;
-    margin-top: 125px;
-}
-.slider{
     object-fit:cover;
-    position: relative;
     float: right;
-    display: flex;
 }
-#img_slider{
+.img_slider{
     height: 330px;
     margin: 10px;
 }
 .sun_page{
     width: 100%;
-    height: 323px;
-    z-index: 2;
     object-fit:cover;
     position: relative;
+}
+.solar_context{
+    position: absolute;
+    margin-top: 50px;
+}
+.solar_title{
+    width: 100%;
+    text-align: center;
+}
+.solar_images{
+    text-align: center;
+    margin-top: 50px;
+}
+.img_solar{
+    width: 20%;
+    margin: 0px 15px;
 }
 .cases_page{
     width: 100%;
-    height: 860px;
     object-fit:cover;
     position: relative;
 }
+.cases_context{
+    position: absolute;
+    margin: 200px 150px;
+    text-align: center;
+}
 .contact_page{
     width: 100%;
-    height: 485px;
     object-fit:cover;
     position: relative;
+}
+.contact_context{
+    position: absolute;
+    margin: 100px 200px;
+    display:inline-block;
+    box-shadow:0px 0px 9px gray;
+}
+.contact_left{
+    float: left;
+    width: 50%;
+    background-color: white;
+    padding: 20px 30px;
+}
+.contact_right{
+    float: right;
+    width: 50%;
+    background-color: #F97C22;
+    color: white;
+    padding: 20px 30px;
 }
 .info_page{
     width: 100%;
     object-fit:cover;
     position: relative;
+    background-color: #2F2F2F;
+    color: white;
 }
-.contact_info{
-    position: absolute;
-    z-index: 2;
-    margin: 200px 0px 0px 667px;
+.info_context{
+    padding: 60px;
+}
+.img_footer_logo{
+    width: 100%;
+    margin-bottom: 20px;
 }
 #btn_submit{
     background-color: white;
-    color: #E38049; 
-    border: 2px solid #E38049;
+    color: #F97C22; 
+    border: 2px solid #F97C22;
     margin: 0px;
     float:right;
 }
-.email_submit{
-    position: absolute;
-    z-index: 2;
-    margin: 130px 0px 0px 860px;
-}
 #txb_email{
     width: 250px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
 #btn_gradual{
     width:250px;
     color: white;
     border: none;
     padding: 5px 0px;
-    background: -webkit-linear-gradient(left,#E38049,#FFB01A);
-    background: -o-linear-gradient(right,#E38049,#FFB01A);
-    background: -moz-linear-gradient(right,#E38049,#FFB01A);
-    background: linear-gradient(to right,#E38049,#FFB01A);
+    background: -webkit-linear-gradient(left,#F97C22,#FFB01A);
+    background: -o-linear-gradient(right,#F97C22,#FFB01A);
+    background: -moz-linear-gradient(right,#F97C22,#FFB01A);
+    background: linear-gradient(to right,#F97C22,#FFB01A);
 }
 
 
@@ -304,17 +360,60 @@ a:hover {
     width: 100%;
     position: relative;
 }
+.team_context{
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+}
+.team_picture{
+    margin:50px 0px
+}
+.img_team{
+    width: 30%;
+}
+.img_team_service{
+    width: 70%;
+    margin: 10px;
+}
+.team_service_pictures{
+    margin: 50px;
+}
+.train_service{
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+.col_train_service{
+    margin-left: 42px;
+    text-align: right;
+}
+.feature_context{
+    position:absolute;
+    z-index: 2;
+    margin: 100px;
+}
 .img_feature{
-    width: 60%;
-    margin: 160px 125px;
+    width: 65%;
+}
+.feature_picture{
+    position: relative;
 }
 .btn_feature_area{
     z-index: 2;
     position: absolute;
-    margin: 560px 0px 0px 660px;
+    margin: 560px 0px 0px 580px;
 }
 .btn_feature{
     background-color: white;
-    color: #E38049;
+    color: #F97C22;
     border: none;
+}
+.promise_context{
+    z-index: 2;
+    position: absolute;
+}
+.promise_title{
+    width: 76%;
+    text-align: center;
+    margin:50px auto;
 }

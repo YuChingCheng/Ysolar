@@ -26,68 +26,236 @@
 </head>
 <body>
     <div id="app">
-        <div>
+        <div id="logo">
             <img id="img_logo" src="image/ysolar_logo.png">
-            <a href="HomePage.html"><strong>關於力暘</strong></a>
-            <a href=""><strong>服務項目</strong></a>
-            <a href=""><strong>最新消息</strong></a>
-            <a href=""><strong>案例實績</strong></a>
-            <a href=""><strong>常見問題</strong></a>
-            <a href=""><strong>聯絡我們</strong></a>
+        </div>
+        <div class="row" id="nav_row">
+            <div class="col-md-2"><a href="HomePage.html"><strong>關於力暘</strong></a></div>
+            <div class="col-md-2"><a href="Services.html"><strong>服務項目</strong></a></div>
+            <div class="col-md-2"><a href=""><strong>最新消息</strong></a></div>
+            <div class="col-md-2"><a href=""><strong>案例實績</strong></a></div>
+            <div class="col-md-2"><a href=""><strong>常見問題</strong></a></div>
+            <div class="col-md-2"><a href=""><strong>聯絡我們</strong></a></div>
         </div>
         <div class="commom_page">
             <img class="img_background" src="image/service_banner.png">
         </div>
         <div class="team_page">
-            <img class="img_background" src="image/team.png">
-        </div>
-        <div class="commom_page">
-            <img class="img_background" src="image/onestation.png">
-        </div>
-        <div class="contact_page">
-            <div class="contact_info">
-                <div class="form-group row">
-                    <div class="col-xs-6">
-                      <input class="form-control input-sm" type="text" placeholder="姓名">
-                    </div>
-                    <div class="col-xs-6">
-                      <input class="form-control input-sm" type="text" placeholder="連絡電話">
-                    </div>
+            <div class="team_context">
+                <span class="font_context" style="color: #F97C22">「力暘能源股份有限公司」成立於2016年</span><br>
+                <span class="font_title">力暘為國內提供太陽能一站式整合服務</span><br>
+                    <span class="font_title">擁有最廣域的規畫及營運團隊，創造出太陽能光電高效的售電收益</span><br><br>
+                <span class="font_context">從取得土地開發，興建與監造太陽能光電場，到最後的巡檢維運，
+                    結合土地、工程、電力、資訊的專業和技術服務</span>
+                <div class="team_picture">
+                    <img class="img_team" src="image/team1.png">
+                    <img class="img_team" src="image/team2.png">
+                    <img class="img_team" src="image/team3.png">
                 </div>
-                <div class="form-group row">
-                    <div class="col-xs-12">
-                      <input class="form-control input-sm" type="text" placeholder="信箱">
+                <span class="font_title">專業團隊服務項目</span><br>
+                <div class="team_service_pictures">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="img_team_service" src="image/team_service1.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img_team_service" src="image/team_service2.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img_team_service" src="image/team_service3.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img_team_service" src="image/team_service4.png">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-xs-12">
-                        <textarea class="form-control" rows="3" id="comment" placeholder="留言"></textarea>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="img_team_service" src="image/team_service5.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img_team_service" src="image/team_service6.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img_team_service" src="image/team_service7.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img_team_service" src="image/team_service8.png">
+                        </div>
                     </div>
-                </div>
-                <button class="button" id="btn_submit"><span>確認送出 </span></button>
-            </div>
-            <img class="img_background" src="image/contact.png">
-        </div>
-        <div class="commom_page">
-            <div class="nav">
-                <img class="img_feature" :src="imgArr[index]" alt="">
-                <div class="btn_feature_area"> 
-                    <button class="btn_feature" id="btn_feature1" type="button" @click="left">上一頁<i style="margin: auto;" class="far fa-arrow-alt-circle-left fa-1x"></i></button>
-                    <button class="btn_feature" id="btn_feature2" type="button" @click="right">下一頁<i style="margin: auto;" class="far fa-arrow-alt-circle-right fa-1x"></i></button>
                 </div>
                 
             </div>
-            <img class="img_background" src="image/feature.png">
+            
+            <img class="img_background" src="image/team.png">
         </div>
         <div class="commom_page">
+            <div class="row train_service">
+                <div class="col-md-2 col_train_service">
+                    <span class="font_number">01</span><br>
+                    <span class="font_context">專業諮詢</span><br>
+                </div>
+                <div class="col-md-2 col_train_service">
+                    <span class="font_number">02</span><br>
+                    <span class="font_context">案場勘查</span><br>
+                </div>
+                <div class="col-md-2 col_train_service">
+                    <span class="font_number">03</span><br>
+                    <span class="font_context">文件申請</span><br>
+                </div>
+                <div class="col-md-2 col_train_service">
+                    <span class="font_number">04</span><br>
+                    <span class="font_context">設計施工</span><br>
+                </div>
+                <div class="col-md-2 col_train_service">
+                    <span class="font_number">05</span><br>
+                    <span class="font_context">營運維護管理</span><br>
+                </div>
+            </div>
+            <img class="img_background" src="image/train_service.png">
+        </div>
+
+
+        <div class="contact_page">
+            <div class="contact_context">
+                <div class="contact_left">
+                    <span class="font_context"><strong>預約您的</strong></span><br>
+                    <span class="font_context"><strong>專屬顧問團隊</strong></span><br><br><br>
+                    <span class="font_small_context">集合相關專業領域與經驗豐富之技術人員，並將與水土保持、環境工程、大地工程、生態調查等
+                        團隊合作，另聘國內外交通運輸、經營管理、財稅法令等專家學者為特約顧問，以策略聯盟方式結合多元領域人員。
+                    </span><br><br><br>
+                    <span class="font_small_context" style="color: #F97C22;">| 力暘能源與您一起支持綠能，創造未來無限可能
+                    </span>
+                </div>
+                <div class="contact_right">
+                    <span class="font_context"><strong>與我們聯絡!</strong></span><br>
+                    <span class="font_small_context">關於產品及施工相關問題，無論您有任何需求，歡迎填下您的聯絡資料，我們將盡速請專人回覆您，謝謝
+                    </span>
+                    <div class="form-group row">
+                        <div class="col-xs-6">
+                            <input class="form-control input-sm" type="text" placeholder="姓名">
+                        </div>
+                        <div class="col-xs-6">
+                            <input class="form-control input-sm" type="text" placeholder="連絡電話">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <input class="form-control input-sm" type="text" placeholder="信箱">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <textarea class="form-control" rows="3" id="comment" placeholder="留言"></textarea>
+                        </div>
+                    </div>
+                    <button class="button" id="btn_submit"><span>確認送出 </span></button>
+                </div>
+            </div>
+            <img class="img_background" src="image/contact.png">
+        </div>
+
+
+        <div class="commom_page">
+            <div class="feature_context">
+                <div>
+                    <span class="font_title"><strong>工程特色</strong></span><br><br>
+                    <span class="font_context">「力暘能源」在業界以「安全穩定」著稱，更選用高品質模組與高規格系統零組件。
+                    </span>
+                </div>
+                <img class="img_feature" :src="imgArr[index]" alt="">
+                
+            </div>
+            <div class="btn_feature_area"> 
+                <button class="btn_feature" id="btn_feature1" type="button" @click="left">上一頁<i style="margin: auto;" class="far fa-arrow-alt-circle-left fa-1x"></i></button>
+                <button class="btn_feature" id="btn_feature2" type="button" @click="right">下一頁<i style="margin: auto;" class="far fa-arrow-alt-circle-right fa-1x"></i></button>
+            </div>
+            <img class="img_background" src="image/feature.png">
+        </div>
+
+
+        <div class="commom_page">
+            <div class="promise_context">
+                <div class="promise_title">
+                    <span class="font_title"><strong>三大保證</strong></span><br><br>
+                    <span class="font_context">「力暘能源」投身太陽能產業，目的希望能貢獻一己之力，透過太陽光電技術，提供友善環境的綠電，
+                        改善生活的空氣品質，呼籲大眾支持太陽能光電，讓「綠能環保」及「永續能源」有真正實踐的機會。
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img_background" src="image/promise1.png">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img_background" src="image/promise2.png">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img_background" src="image/promise3.png">
+                    </div>
+                </div>
+            </div>
             <img class="img_background" src="image/promise.png">
         </div>
-        <div class="info_page">
-            <div class="email_submit">
-                <input id="txb_email" type="email" placeholder="Email"><br>
-                <button id="btn_gradual" type="button"><strong>確認送出</strong></button>
+
+
+         <div class="info_page">
+            <div class="row info_context">
+                <div class="col-md-2">
+                    <img class="img_footer_logo" src="image/ysolar_logo2.png">
+                    <div class="row">
+                        <div class="col"> <i class="fab fa-facebook-square icon_footer" style="font-size:24px"></i></div>
+                        <div class="col"> <i class='fab fa-facebook-messenger icon_footer' style='font-size:24px'></i></div>
+                        <div class="col"> <i class="fab fa-youtube icon_footer" style="font-size:24px"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-5">
+                            <span class="font_context">公司資訊</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <i class='fas fa-phone' style="color: #F97C22 ;"></i>
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">免費服務專線 0809-099-008</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <i class='fas fa-map-marker-alt' style="color: #F97C22 ;"></i>
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">台中總公司&nbsp; |&nbsp; 台中市西屯區市政北二路236號9F之6</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">台南分處&nbsp;&emsp; |&nbsp; 台南市安南區安吉路一段51號</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">屏東分處&nbsp;&emsp; |&nbsp; 屏東縣東港鎮沿海路163號</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-5">
+                    <span class="font_context">訂閱力暘</span><br>
+                    <span class="font_small_context">歡迎留下您的信箱，就能接收有關力暘能源的最新消息。</span>
+                    <input id="txb_email" type="email" placeholder="Email"><br>
+                    <button id="btn_gradual" type="submit"><strong>確認送出</strong></button>
+                    
+                </div>
             </div>
-            <img class="img_background" src="image/info.png">
+            
         </div>
 
 
