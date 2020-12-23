@@ -17,7 +17,57 @@ html, body { margin: 0; padding: 0; height: 100%; border:none; }
 .font_number{
     font-size: 70px;
 }
+.banner{
+    color: white;
+    text-align: center;
+    position:absolute;
+    z-index: 2;
+    top: 50%;
+    width:100%;
+    margin:0 auto;
+}
 
+.common_page {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.newest_context{
+    position: absolute;
+    padding: 150px;
+}
+.newest_left{
+    float: left;
+    width: 35%;
+}
+.newest_right{
+    float: right;
+    width: 60%;
+}
+.img_background{
+    width: 100%;
+}
+button:focus {
+    border: none;
+    outline: none;
+}
+a{
+    color: black;
+    margin: 0px 20px;
+    font-size: 15px;
+}
+a:hover {
+    text-decoration:none;
+    color:#F97C22;
+}
+
+
+
+
+
+
+/* HomePage */
 .slider_container {
     margin: 0px;
     width: 100%;
@@ -89,70 +139,39 @@ html, body { margin: 0; padding: 0; height: 100%; border:none; }
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
 } */
-.commom_page {
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.img_background{
-    width: 100%;
-}
-button:focus {
-    border: none;
-    outline: none;
-}
-a{
-    color: black;
-    margin: 20px 15px;
-    font-size: 15px;
-}
-a:hover {
-    text-decoration:none;
-    color:#F97C22;
-}
-
-
-
-
-
-/* HomePage */
 .page{
     width: 100%;
     height: 675px;
     object-fit:cover;
     position: relative;
 }
-#nav_row {
+.top_nav{
     position: absolute;
-    margin-top: 20px;
     z-index: 2;
-    display: inline;
-    float: right;
-    width: 60%;
+    width: 100%;
 }
-#logo{
-    position: inherit;
-    z-index: 2;
-    display: inline;
+.nav_height{
+    height: 70px;
+}
+.nav_left {
     float: left;
     width: 40%;
+}
+.nav_right{
+    float: right; 
+    width: 60%; 
+    margin-top: 20px;
 }
 #img_logo{
     width:150px;
     height: 50px;
-    margin: 10px 200px 10px 100px;
+    margin: 10px 0px 10px 100px;
 }
-#nav_row{
-    margin-top: 20px;
-}
-
-
 .context{
     text-align: center;
     position:absolute;
     z-index: 2;
-    top: 40%;
+    top: 35%;
     width:100%;
     margin:0 auto;
 }
@@ -220,7 +239,7 @@ a:hover {
 }
 .service_right{
     float: right;
-    width: 60%;
+    width: 61%;
 }
 .btn_arrow{
     background-color: transparent;
@@ -239,6 +258,7 @@ a:hover {
 }
 .about_page{
     margin: 50px;
+    height: 420px;
 }
 .showdata{
     text-align: center;
@@ -327,7 +347,7 @@ a:hover {
     padding: 60px;
 }
 .img_footer_logo{
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
 }
 #btn_submit{
@@ -416,4 +436,134 @@ a:hover {
     width: 76%;
     text-align: center;
     margin:50px auto;
+}
+
+/* 最新消息 */
+.title{
+    margin: 30px 0px;
+}
+.latest_context{
+    margin: 50px;
+    height: 1170px;
+}
+.article_list{
+    float: left;
+    width: 70%;
+}
+.article_type{
+    float: right;
+    width: 25%;
+}
+.input-icons { 
+    width: 100%; 
+    position:relative;
+    direction: rtl;
+}
+.icon { 
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 24px;
+    height: 25px;
+    color: rgb(185, 185, 185);
+} 
+.icon:hover{
+    color:  #F97C22;
+}
+  
+.input-field { 
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+} 
+.href-field{
+    width: 100%;
+    text-align: left;
+}
+#img_latest_logo{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.latest_item{
+    margin-bottom: 100px;
+}
+
+
+/* ContactUs */
+.contactUs_page{
+    position: relative;
+    height: 730px;
+}
+.contactUs{
+    position: absolute;
+    width: 100%;
+    padding: 100px;
+}
+.contactUs_left{
+    color: white;
+    float: left;
+    width: 50%;
+    margin-top: 130px;
+}
+.contactUs_right{
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    float: right;
+    width: 50%;
+}
+.phoneCall{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:0px 0px 40px gray;
+}
+.phoneCall_left{
+    background-color:#F97C22 ;
+    color: white;
+    display: inline;
+    padding: 30px;
+}
+.phoneCall_right{
+    color: #F97C22;
+    display: inline;
+    padding: 30px;
+    background-color: white;
+}
+.img_phone{
+    position: absolute;
+    width: 82%;
+    z-index: 3;
+}
+.location_page{
+    position: relative;
+    margin: 200px 50px 100px 50px;
+}
+.map{
+    margin-top: 50px;
+}
+.default hr{
+    border-top: 1px solid#F97C22;
+}
+.default{
+    border: solid 1px;
+    background-color: white;
+    color:#F97C22 ;
+    padding: 20px;
+}
+.change{
+    background-color: #F97C22;
+    color: white;
+    padding: 20px;
+}
+.nav>li>a {
+    padding: 0px;
+}
+.nav-tabs.nav-justified>li>a{
+    margin: 10px;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
 }

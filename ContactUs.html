@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+    <!-- <script src="/Scripts/vue.js"></script> -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+
+    <!-- Font Awesome -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title></title>
+    <link rel="stylesheet" href="Common.css" type="text/css" />
+</head>
+<body>
+    <div id="app">
+        <div class="nav_height">
+            <div class="nav_left">
+                <a href="HomePage.html"><img id="img_logo" src="image/ysolar_logo.png"></a>
+            </div>
+            <div class="nav_right">
+                <a href=""><strong>關於力暘</strong></a>
+                <a href="Services.html"><strong>服務項目</strong></a>
+                <a href="NewestInfo.html"><strong>最新消息</strong></a>
+                <a href=""><strong>案例實績</strong></a>
+                <a href=""><strong>常見問題</strong></a>
+                <a href="ContactUs.html"><strong>聯絡我們</strong></a>
+            </div>
+        </div>
+
+
+        <div class="contactUs_page">
+            <div class="contactUs">
+                <div class="contactUs_left">
+                    <span class="font_title"><strong>聯絡我們</strong></span><br>
+                    <span class="font_context">力暘提供最完善的專業服務，期待您的聯繫！
+                    </span>
+                </div>
+                <div class="contactUs_right">
+                    <span class="font_context"><strong>填寫表單</strong></span><br>
+                    <span class="font_small_context">如有任何需求或建議，歡迎填寫聯絡表單
+                    </span><br><br>
+                    <div class="form-group row">
+                        <div class="col-xs-6">
+                            <input class="form-control input-sm" type="text" placeholder="姓名">
+                        </div>
+                        <div class="col-xs-6">
+                            <input class="form-control input-sm" type="text" placeholder="連絡電話">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <input class="form-control input-sm" type="text" placeholder="信箱">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <input class="form-control input-sm" type="text" placeholder="地址">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <textarea class="form-control" rows="3" id="comment" placeholder="留言"></textarea>
+                        </div>
+                    </div>
+                    <button class="button"><span>確認送出 </span></button>
+                </div>
+            </div>
+            <img class="img_background" src="image/contact_us.png">
+            <div class="phoneCall">
+                <div class="phoneCall_left">
+                    <i class="fas fa-phone-volume" style='font-size:24px'></i>
+                    <span class="font_context">撥打免費服務電話
+                    </span>
+                </div>
+                <div class="phoneCall_right">
+                    <span class="font_context">0809-099-008</span>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="img_phone">
+            <img class="img_background" src="image/phone.png">
+        </div>
+        
+        <div class="location_page">
+            <div class="solar_title">
+                <span class="font_title">公司服務處</span><br>
+                <span class="font_context">歡迎前往本公司服務處，力暘能源提供專業人員為您服務</span>
+            </div>
+
+            <div class="map">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                      <a class="nav-link" @click.prevent="setActive('Taichung')" :class="{ active: isActive('Taichung') }" href="#Taichung">
+                          <div class="default" id="Taichung_card">
+                            <i class='fas fa-map-marker-alt'></i><br>
+                            <span class="font_context">台中總公司</span>
+                            <hr>
+                            <span class="font_small_context">台中市西屯區市政北二路236號9F之6</span>
+                          </div>
+                       </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" @click.prevent="setActive('Tainan')" :class="{ active: isActive('Tainan') }" href="#Tainan">
+                        <div class="default" id="Tainan_card">
+                            <i class='fas fa-map-marker-alt'></i><br>
+                            <span class="font_context">台南分處</span>
+                            <hr>
+                            <span class="font_small_context">台南市安南區安吉路一段51號</span>
+                          </div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" @click.prevent="setActive('Pingtung')" :class="{ active: isActive('Pingtung') }" href="#Pingtung">
+                        <div class="default" id="Pingtung_card">
+                            <i class='fas fa-map-marker-alt'></i><br>
+                            <span class="font_context">屏東分處</span>
+                            <hr>
+                            <span class="font_small_context">屏東縣東港鎮沿海路163號</span>
+                          </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="tab-content py-3" id="myTabContent">
+                    <div class="tab-pane fade" :class="{ 'active show': isActive('Taichung') }" id="Taichung">
+                        <img class="img_background" src="image/Taichung.png">
+                    </div>
+                    <div class="tab-pane fade" :class="{ 'active show': isActive('Tainan') }" id="Tainan">
+                        <img class="img_background" src="image/Tainan.png">
+                    </div>
+                    <div class="tab-pane fade" :class="{ 'active show': isActive('Pingtung') }" id="Pingtung">
+                        <img class="img_background" src="image/Pingtung.png">
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+
+        <div class="info_page">
+            <div class="row info_context">
+                <div class="col-md-4">
+                    <img class="img_footer_logo" src="image/ysolar_logo2.png">
+                    <div class="row">
+                        <div class="col"> <i class="fab fa-facebook-square icon_footer" style="font-size:24px"></i></div>
+                        <div class="col"> <i class='fab fa-facebook-messenger icon_footer' style='font-size:24px'></i></div>
+                        <div class="col"> <i class="fab fa-youtube icon_footer" style="font-size:24px"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-5">
+                            <span class="font_context">公司資訊</span><br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <i class='fas fa-phone-alt' style="color: #F97C22 ;"></i>
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">免費服務專線 0809-099-008</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <i class='fas fa-map-marker-alt' style="color: #F97C22 ;"></i>
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">台中總公司&nbsp; |&nbsp; 台中市西屯區市政北二路236號9F之6</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">台南分處&nbsp;&emsp; |&nbsp; 台南市安南區安吉路一段51號</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-11">
+                            <span class="font_small_context">屏東分處&nbsp;&emsp; |&nbsp; 屏東縣東港鎮沿海路163號</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3">
+                    <span class="font_context">訂閱力暘</span><br>
+                    <span class="font_small_context">歡迎留下您的信箱，就能接收有關力暘能源的最新消息。</span><br>
+                    <input id="txb_email" type="email" placeholder="Email"><br>
+                    <button id="btn_gradual" type="submit"><strong>確認送出</strong></button>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    <script src="ContactUs.js"></script>
+</body>
+</html>

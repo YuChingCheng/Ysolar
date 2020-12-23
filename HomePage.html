@@ -17,9 +17,9 @@
 
 
     <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title></title>
 
     <link rel="stylesheet" href="Common.css" type="text/css" />
@@ -320,17 +320,20 @@
 <body>
     <div id="app">
         <div class="page">
-            <div id="logo">
-                <img id="img_logo" src="image/ysolar_logo.png">
+            <div class="top_nav">
+                <div class="nav_left">
+                    <a href="HomePage.html"><img id="img_logo" src="image/ysolar_logo.png"></a>
+                </div>
+                <div class="nav_right">
+                    <a href=""><strong>關於力暘</strong></a>
+                    <a href="Services.html"><strong>服務項目</strong></a>
+                    <a href="NewestInfo.html"><strong>最新消息</strong></a>
+                    <a href=""><strong>案例實績</strong></a>
+                    <a href=""><strong>常見問題</strong></a>
+                    <a href="ContactUs.html"><strong>聯絡我們</strong></a>
+                </div>
             </div>
-            <div class="row" id="nav_row">
-                <div class="col-md-2"><a href=""><strong>關於力暘</strong></a></div>
-                <div class="col-md-2"><a href="Services.html"><strong>服務項目</strong></a></div>
-                <div class="col-md-2"><a href=""><strong>最新消息</strong></a></div>
-                <div class="col-md-2"><a href=""><strong>案例實績</strong></a></div>
-                <div class="col-md-2"><a href=""><strong>常見問題</strong></a></div>
-                <div class="col-md-2"><a href=""><strong>聯絡我們</strong></a></div>
-            </div>
+
             <div class="context">
                 <span class="font_biggest" id="top_page_text1"><strong>「代代相傳，由您開始」</strong></span><br>
                 <span class="font_second" id="top_page_text2"><strong>力暘能源與您一起支持綠能，創造未來無限可能</strong></span><br><br>
@@ -362,15 +365,13 @@
                     透過「代代相傳，由您開始」的口號，呼籲大眾共同響應太陽能光電，讓「綠能環保」及「永續能源」有真正實踐的機會。
                 </span>
                 <br><br>
+                <button class="button"><span>了解更多 </span></button>
             </div>
             <div class="right">
                 <video width="100%" controls>
                     <source src="video/video_test.mp4" type="video/mp4">
                     您的瀏覽器不支援HTML影片
                   </video>
-            </div>
-            <div>
-                <button class="button"><span>了解更多 </span></button>
             </div>
         </div>
 
@@ -410,7 +411,7 @@
                     <div class="slider">
                         <img class="img_slider" :src="imgSrc[index]" alt="">
                         <img class="img_slider" :src="imgSrc[index+1]" alt="">
-                        <button class="btn_arrow" type="button" @click="right">
+                        <button class="btn_arrow" type="button" @click="changeImg">
                             <i id="btn_next" style="margin: auto;" class="far fa-arrow-alt-circle-right fa-2x"></i>
                         </button>
                     </div>
@@ -488,7 +489,7 @@
 
         <div class="info_page">
             <div class="row info_context">
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <img class="img_footer_logo" src="image/ysolar_logo2.png">
                     <div class="row">
                         <div class="col"> <i class="fab fa-facebook-square icon_footer" style="font-size:24px"></i></div>
@@ -496,17 +497,17 @@
                         <div class="col"> <i class="fab fa-youtube icon_footer" style="font-size:24px"></i></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="row">
                         <div class="col-md-1">
                         </div>
                         <div class="col-md-5">
-                            <span class="font_context">公司資訊</span>
+                            <span class="font_context">公司資訊</span><br><br>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-1">
-                            <i class='fas fa-phone' style="color: #F97C22 ;"></i>
+                            <i class='fas fa-phone-alt' style="color: #F97C22 ;"></i>
                         </div>
                         <div class="col-md-11">
                             <span class="font_small_context">免費服務專線 0809-099-008</span>
@@ -536,9 +537,9 @@
                     </div>
                     
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-3">
                     <span class="font_context">訂閱力暘</span><br>
-                    <span class="font_small_context">歡迎留下您的信箱，就能接收有關力暘能源的最新消息。</span>
+                    <span class="font_small_context">歡迎留下您的信箱，就能接收有關力暘能源的最新消息。</span><br>
                     <input id="txb_email" type="email" placeholder="Email"><br>
                     <button id="btn_gradual" type="submit"><strong>確認送出</strong></button>
                     
