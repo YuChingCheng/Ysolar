@@ -8,11 +8,17 @@ html, body { margin: 0; padding: 0; height: 100%; border:none; }
 .font_title{
     font-size: 30px;
 }
+.fontsmall_title{
+    font-size: 18px;
+}
 .font_context{
     font-size: 21px;
 }
 .font_small_context{
     font-size: 16px;
+}
+.font_xs_context{
+    font-size: 14px;
 }
 .font_number{
     font-size: 70px;
@@ -22,7 +28,7 @@ html, body { margin: 0; padding: 0; height: 100%; border:none; }
     text-align: center;
     position:absolute;
     z-index: 2;
-    top: 50%;
+    top: 40%;
     width:100%;
     margin:0 auto;
 }
@@ -60,6 +66,9 @@ a{
 a:hover {
     text-decoration:none;
     color:#F97C22;
+}
+.btn_right{
+    float: right;
 }
 
 
@@ -373,6 +382,214 @@ a:hover {
 }
 
 
+/* Introduction */
+.profession_page{
+    background-color: rgb(250, 248, 248);
+    position: relative;
+    height: 570px;
+}
+.profession_left{
+    float: left;
+    width: 45%;
+    position: relative;
+}
+.profession_right{
+    float: right;
+    width: 50%;
+}
+.profession_context{
+    width: 90%;
+    position: absolute;
+    background-color: white;
+    box-shadow:0px 0px 9px gray;
+    margin-top: 100px;
+    padding: 50px 50px 50px 0px;
+}
+#img_factory{
+    position: absolute;
+    width: 90%;
+}
+#banner_profession{
+    position: absolute;
+    background-color: #F97C22;
+    height: 80px;
+    width: 200px;
+    color: white;
+    padding: 5px;
+    margin: 250px 300px;
+}
+.lord_page{
+    background-color: rgb(250, 248, 248);
+    padding: 50px 50px 50px 100px;
+    position: relative;
+    height: 400px;
+}
+.lord_context{
+    position: absolute;
+}
+.lord_left{
+    float: left;
+    width: 45%;
+}
+.lord_right{
+    float: right;
+    width: 50%;
+}
+.box{
+    border: 2px solid #F97C22;
+    height: 135px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    color: #F97C22;
+    margin: 10px;
+}
+.box_flex{
+    display: inline-flex;
+}
+.concept_context{
+    width: 30%;
+    position: absolute;
+    margin: 70px;
+}
+.advantage_context{
+    position: absolute;
+    padding: 50px 50px 50px 0px;
+}
+.advantage_left{
+    float: left;
+    width: 48%;
+    position: relative;
+}
+#picture_message1{
+    visibility: hidden;
+}
+#picture_message2{
+    visibility: hidden;
+}
+#picture_message3-1{
+    visibility: hidden;
+}
+#picture_message3-2{
+    visibility: hidden;
+}
+#picture_message4-1{
+    visibility: hidden;
+}
+#picture_message4-2{
+    visibility: hidden;
+}
+.div_orange{
+    float: left;
+    width: 5px;
+    background-color: #F97C22;
+}
+#div_orange1{
+    height: 90px;
+}
+#div_orange2{
+    height: 135px;
+}
+#div_orange3-1{
+    height: 197px;
+}
+#div_orange3-2{
+    height: 182px;
+}
+#div_orange4-1{
+    height: 112px;
+}
+#div_orange4-2{
+    height: 112px;
+}
+.btn_nextPage{
+    background-color: transparent;
+    color: #F97C22;
+    border: none;
+    float: right;
+}
+.picture_info{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 90%;
+    opacity: .8;
+    float: left;
+}
+.advantage_right{
+    float: right;
+    width: 48%;
+}
+.img_advantage{
+    width: 100%;
+    margin-top: 90px;
+    position: absolute;
+}
+.btn_advantage{
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.circle{
+    width:40px;
+    height:40px; 
+    border-radius:999em;
+    background-color:#F97C22;
+    text-align: center;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    margin-top: 18px;
+}
+.center{
+    line-height: 40px;
+}
+.box_selection{
+    box-shadow:0px 0px 10px gray;
+    padding: 10px 40px;
+    position: relative;
+    height: 75px;
+    margin-left: 20px;
+    background-color: white;
+}
+.box_left{
+    float: left;
+    width: 90%;
+}
+.text_color{
+    color: #F97C22 ;
+}
+.box_right{
+    float: right;
+    width: 5%;
+    margin-top: 13px;
+    color: #F97C22;
+}
+.btn_advantage:hover .circle{
+    background-color: white;
+    color: #F97C22 ;
+    border: 1px solid  #F97C22;
+}
+.btn_advantage:hover .box_selection{
+    background-color: #F97C22;
+    color: white;
+}
+.btn_advantage:hover .text_color{
+    color: white;
+}
+.cooperation_left{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.cooperation_right{
+    float: right;
+    width: 40%;
+}
+
+
+
+
+
 /* Service */
 .team_page{
     height: 1390px;
@@ -438,7 +655,10 @@ a:hover {
     margin:50px auto;
 }
 
-/* 最新消息 */
+
+
+
+/* NewestInfo */
 .title{
     margin: 30px 0px;
 }
