@@ -70,6 +70,14 @@ a:hover {
 .btn_right{
     float: right;
 }
+.left50{
+    float: left;
+    width: 45%;
+}
+.right50{
+    float: right;
+    width: 45%;
+}
 
 
 
@@ -707,6 +715,14 @@ a:hover {
 .latest_item{
     margin-bottom: 100px;
 }
+
+
+
+/* FrequentlyAsk */
+.ask_page{
+    margin: 50px;
+}
+
 
 
 /* ContactUs */
